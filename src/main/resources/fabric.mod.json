@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "noinvcharacter",
+  "version": "${version}",
+  "name": "No Inventory Character",
+  "description": "Removes the Character-Render in the Inventory. Useful for Resourcepacks.",
+  "authors": [
+    "Lunatic"
+  ],
+  "license": "MIT",
+  "icon": "assets/noinvcharacter/icon.png",
+  "environment": "*",
+  "mixins": [
+    "noinvcharacter.mixins.json"
+  ],
+  "depends": {
+    "fabric-api": "*"
+  },
+  "accessWidener": "noinvcharacter.accesswidener"
+}

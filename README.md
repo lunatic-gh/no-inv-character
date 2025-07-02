@@ -1,16 +1,19 @@
-# A Fabric Mod-Template
+# No Inventory Character
 
 # CURRENT SUPPORTED VERSION: 1.21.7
 
-<h3>How to use:</h3>
+This mod removes the Player-Render from all the Game's Inventory Screens (Except for the Smithing Table).
+This is especially useful if you use stuff like graphics in Resourcepacks, which would be obscured by the render.
 
-- Create a Repository with the Template with the button at the top-right
-- Clone that Repo into Intellij ("Create Project from VCS")
-- Wait until it's finished loading everything. really. ***everything!***
-- In Intellij, go into the build.gradle, and scroll right to the bottom. you'll find parameters you want to edit like groupId, modId, modName etc etc.
-- When you changed them to your liking (make sure modid & groupId are changed, or you will encounter issues with this), reload gradle (reload-icon at the top-right) and run the task `gradle finalSetup`, which will copy these values whereever needed. to be 100% safe, reload the project again afterwards.
-- Enjoy your Mod-Project!
+### Building:
 
-<h4>If afterwards you find your buildscript to be too cluttered, you can safely remove EVERYTHING involving the "finalSetup" task. It's only relevant for setting up the template-mod.</h4>
-
-<h3>NOTE: This was the first ever thing i made in gradle (in terms of actual code), and it took around 4-6 hours, so it might be a little clusterfuck.</h3>
+- Make sure you got both java 21 (or later) and Git installed and in your path
+- Run the following commands in any terminal:
+- ````shell
+  git clone https://github.com/lunatic-gh/no-inv-character
+  cd "no-inv-character"
+  .\gradlew build # On Windows
+  ./gradle build # On Linux/MacOS
+  ````
+- The Built jar file will be in ``<project-directory>/build/libs/[modname]-[version].jar``
+    - The file ending with ``-sources.jar`` is not the mod, but the compressed source files.

@@ -10,7 +10,7 @@ This is especially useful if you use stuff like graphics in Resourcepacks, which
 - Make sure you got both java 21 (or later) and Git installed and in your path
 - Run the following commands in any terminal:
 - ````shell
-  git clone https://github.com/lunatic-gh/no-inv-character
+  git clone "https://github.com/lunatic-gh/no-inv-character"
   cd "no-inv-character"
   .\gradlew build # On Windows
   ./gradle build # On Linux/MacOS
